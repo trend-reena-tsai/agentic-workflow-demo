@@ -31,7 +31,9 @@ safe-outputs:
     title-prefix: "[repo-status] "
     labels: [report, daily-status]
     close-older-issues: true
-engine: copilot
+engine:
+  id: copilot
+  model: gpt-4o
 
 source: githubnext/agentics/workflows/repo-status.md@1c6668b751c51af8571f01204ceffb19362e0f66
 ---
