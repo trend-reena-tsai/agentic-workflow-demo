@@ -6,7 +6,7 @@ description: |
   and project recommendations.
 
 on:
-  schedule: every 1h
+  schedule: every 24h
   workflow_dispatch:
 
 permissions:
@@ -31,7 +31,7 @@ safe-outputs:
     title-prefix: "[repo-status] "
     labels: [report, daily-status]
     close-older-issues: true
-engine: claude
+engine: copilot
 
 source: githubnext/agentics/workflows/repo-status.md@1c6668b751c51af8571f01204ceffb19362e0f66
 ---
